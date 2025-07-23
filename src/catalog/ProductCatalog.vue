@@ -11,7 +11,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import ProductInfo from './product-info/ProductInfo.vue'
 import products from './product-data.js'
 import { useCartStore } from '@/stores/cart'

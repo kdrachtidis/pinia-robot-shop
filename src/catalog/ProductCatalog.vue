@@ -14,11 +14,12 @@
 import { ref } from 'vue'
 import ProductInfo from './product-info/ProductInfo.vue'
 import products from './product-data.js'
+import { useCartStore } from '@/stores/cart'
 
-const cart = ref([])
+const cartStore = useCartStore()
 
 function addToCart(product) {
-  cart.value.push({ ...product })
+  cartStore.cart.push({ ...product })
 }
 </script>
 
